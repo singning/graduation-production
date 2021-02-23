@@ -9,4 +9,12 @@ module.exports = {
       '@': require('path').resolve(__dirname, 'src'),
     },
   },
+  module: {
+    rules: [
+      {
+        test: /\.less$/i,
+        loader: "less-loader", // 允许在项目中使用 less作为css预处理器
+      },
+    ],
+  },
 };
